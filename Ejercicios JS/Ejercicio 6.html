@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ejercicio de Evaluación</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+      tbody tr{
+        display: none;
+      }     
+
+    </style>
+    <!-- Tus scripts-->
+    <script type="text/javascript">    
+        /*aquí tienes la forma de calcular los precios de cada cosa, por si lo necesitas
+            let precio;
+            switch(producto){
+                case 'jarra': precio = 5; break;
+                case 'cerveza': precio = 2; break;
+                case 'manzanilla': precio = 4; break;
+                case 'cocacola': precio = 2; break;
+                case 'fantanaranja': precio = 2; break;
+                case 'fantalimon': precio = 2; break;
+            }*/
+
+            
+            
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- cabecera-->
+    <header class="mb-4 p-5 rounded bg-dark text-light text-center">
+      <h1>Los Amigos de Martin Fowler</h1>
+      <p>Ejercicios Javascript</p>
+    </header>
+    <main class="container-fluid">
+        <div class="row d-flex flex-row justify-content-center">
+            <div class="col-12">
+                <div class="row d-flex flex-row justify-content-around mb-1">
+                    <button id="jarra" class="col-1 btn btn-info">Jarra</button>
+                    <button id="cerveza" class="col-1 btn btn-info">Cerveza</button>
+                    <button id="manzanilla" class="col-1 btn btn-info">Manzanilla</button>
+                    <button id="cocacola" class="col-1 btn btn-info">CocaCola</button>
+                    <button id="fantanaranja" class="col-1 btn btn-info">Fanta Naranja</button>
+                    <button id="fantalimon" class="col-1 btn btn-info">Fanta Limón</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1 mt-1">
+            <div class="col-12 col-lg-4 ">
+                <h2>Este es su pedido</h2>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                      </tr>
+                    </thead>                                
+                    <tbody>
+                        <tr id="filajarra">
+                            <td>Jarra de Rebujito</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr id="filacerveza">
+                            <td>Cerveza</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr id="filamanzanilla">
+                            <td>Manzanilla</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr id="filacocacola">
+                            <td>Coca Cola</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr id="filafantanaranja">
+                            <td>Fanta Naranja</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr id="filafantalimon">
+                            <td>Fanta Limón</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>TOTAL A PAGAR:</b></td>
+                            <td></td>
+                            <td id="total">0 €</td>
+                        </tr>
+                    </tbody>
+                 </table>
+            </div>
+        </div>        
+    </main>
+   
+
+   
+   
+    
+</body>
+
+</html>
