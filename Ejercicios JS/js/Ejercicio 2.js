@@ -5,11 +5,11 @@ const colorNumber = document.querySelector(".colorNumber");
 console.log(btnGenerar, body);
 
 const generarColor = () => {
-    const r = Math.floor(Math.random() * (256-0)+0);
-    const g = Math.floor(Math.random() * (256-0)+0);
-    const b = Math.floor(Math.random() * (256-0)+0);
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
     
-    const rgbColor = 'rgb(${r}, ${g}, ${b})';
+    const rgbColor = `rgb(${r}, ${g}, ${b})`;
     return rgbColor;
 }
 
@@ -21,4 +21,4 @@ const setBackground = () => {
     body.style.backgroundColor = newColor;
 }
 
-btnGenerar.addEvenListener("click", setBackground);
+btnGenerar.addEventListener("click", setBackground);
