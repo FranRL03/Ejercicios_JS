@@ -5,11 +5,11 @@ const colorNumber = document.querySelector(".colorNumber");
 console.log(btnGenerar, body);
 
 const generarColor = () => {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
     
-    const rgbColor = `rgb(${r}, ${g}, ${b})`;
+    let rgbColor = `rgb(${r}, ${g}, ${b})`;
     return rgbColor;
 }
 
@@ -27,7 +27,7 @@ btnGenerar.addEventListener("click", setBackground);
 
 const botonCont = document.querySelector("#btnGenerar");
 let contador = 0;
-let contadorElemento = document.querySelector("#contador");
+let contadorElemento = document.querySelector(".contador");
 
 const coloresGenerados = () => {
     contador++;
@@ -43,9 +43,14 @@ botonCont.addEventListener("click", actualizarContador);
 
 
 const botonLimpiar = document.getElementById("btnLimpiar");
+let mensaje = document.getElementById("clean");
 
 function limpiar() {
     document.body.style.backgroundColor = "white";
+    mensaje.innerHTML = ' ';
+    contadorElemento.innerHTML = ' ';
+    contador = 0;
+
   }
 
 botonLimpiar.addEventListener("click", limpiar);
